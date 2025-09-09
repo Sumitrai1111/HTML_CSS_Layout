@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Museo;
+}
+@font-face {
+  font-family: Museo;
+  src: url(Museo700-Regular.woff);
+}
+
+@font-face {
+  font-family: Museo-300;
+  src: url(Museo300-Regular.woff);
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 1000px;
+  margin: 0 auto;
+}
+
+.top-background {
+  background-image: url("img/Rectangle 2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1300px;
+  position: relative;
+  z-index: 5;
+}
+
+/* Navbar */
+header {
+  height: 99px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #ffcc00;
+}
+
+header .logo {
+  margin-top: -1.3%;
+  margin-left: 15%;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin-right: 200px;
+}
+
+nav ul li span {
+  color: #ffcc00;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: Museo-300;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  height: 500px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 8%;
+  margin-top: 3%;
+  padding-left: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text {
+  max-width: 450px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  font-style: italic;
+  line-height: 0.9;
+  margin-bottom: 38px;
+  margin-left: 12%;
+}
+
+.hero-text p {
+  font-size: 15px;
+  line-height: 1.1;
+  font-weight: 600;
+  margin-bottom: 45px;
+  color: #ccc;
+  margin-left: 12%;
+  font-family: Museo-300;
+}
+
+.hero-text a {
+  text-decoration: none;
+  background: none;
+  color: #9acd32;
+  transition: 0.3s;
+  margin-left: 12%;
+}
+
+.btn-img {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  margin-top: 25px;
+  gap: 6px;
+}
+
+.btn-img img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+.btn-img span {
+  margin-top: -9%;
+  margin-left: 9%;
+  text-align: center;
+  font-family: Museo-300;
+  font-weight: bold;
+}
+
+.btn-img:hover span {
+  color: #9acd32; /* hover effect on text */
+}
+
+.hero img {
+  max-height: 380px;
+  flex: 1;
+  object-fit: contain;
+}
+
+/*Speed Dots*/
+.speed-dots {
+  width: 50%;
+  margin-left: 46%;
+  margin-top: 20px;
+}
+
+/* Cards Section */
+.cards {
+  display: grid;
+  width: 78%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  padding: 50px;
+  margin-left: 11%;
+  margin-top: 6%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  background-size: cover;
+  background-position: right center;
+  height: 225px;
+}
+
+.card.yellow {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.card-content {
+  padding: 30px;
+  width: 58%;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.card-content p {
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  font-family: Museo-300;
+}
+
+.card-content a {
+  font-size: 16px;
+  font-weight: 540;
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+/* Explore Products */
+.middle-background {
+  background-image: url("img/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 3100px;
+  position: relative;
+  z-index: 2;
+  margin-top: -40%;
+  padding-top: 200px;
+}
+
+.white-background h2 {
+  font-size: 34px;
+  margin-top: 32%;
+  margin-left: 30%;
+  color: black;
+  font-weight: bold;
+}
+
+.white-background p {
+  font-size: 16px;
+  width: 50%;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 599;
+  font-family: Museo-300;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.product {
+  background: #fff;
+  padding: 13px;
+  border: 1px solid #ddd;
+  width: 300px;
+  height: 280px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.product img {
+  max-width: 100%;
+  height: 90%;
+  margin-bottom: 8px;
+  background: #dde6e8;
+}
+
+.product-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: start;
+  padding-left: 8px;
+  padding-right: 6px;
+  margin-bottom: 10px;
+}
+
+.product p,
+.product span {
+  display: inline-block;
+  margin: 0;
+  font-size: 17px;
+  color: black;
+  font-family: Museo-300;
+}
+
+.product p {
+  font-weight: 520;
+}
+
+.product span {
+  font-weight: bold;
+}
+
+/* Performance Sections */
+.performance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+  padding-right: 20%;
+  margin-top: 4%;
+}
+
+.performance-text {
+  flex: 1;
+  max-width: 350px;
+  margin-top: 8%;
+  margin-left: 22%;
+}
+
+.performance-text h2 {
+  font-size: 38px;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000;
+  width: 380px;
+}
+
+.performance-text p {
+  font-size: 14px;
+  margin-bottom: 45px;
+  color: #333;
+  width: 480px;
+  font-weight: 600;
+  font-family: Museo-300;
+}
+
+.performance-img {
+  flex: 1;
+  text-align: center;
+}
+
+.performance-img img {
+  display: block;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+}
+
+.btn img {
+  display: block;
+  width: 125px;
+  height: 40px;
+}
+
+.btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  pointer-events: none;
+}
+
+/* Newsletter Section */
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 18%;
+  padding-left: 10%;
+}
+
+.newsletter-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.newsletter-content h3 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.newsletter-content h3 span {
+  color: #ffcc00;
+  font-weight: 600;
+  font-size: 38px;
+}
+
+/* form container */
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  width: 580px;
+  height: 45px;
+}
+
+/* input */
+.newsletter-form input {
+  flex: 1;
+  width: 580px;
+  height: 45px;
+  padding-left: 40px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  background: url("img/btn4.png") no-repeat center/100% 100%;
+  font-size: 13px;
+}
+
+.newsletter-form input::placeholder {
+  color: #aaa;
+}
+
+/* submit button */
+.newsletter-form button {
+  width: 200px; /* should match btn5.png’s width */
+  height: 100%;
+  background: url("img/btn5.png") no-repeat center/100% 100%;
+  color: #ffcc00;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+  left: -5%;
+  margin-left: -15%;
+  font-size: 16px;
+}
+
+/* hover effect */
+.newsletter-form button:hover {
+  filter: brightness(1.2);
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #aaa;
+  padding: 60px 20px 15px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-about img {
+  width: 60%;
+  height: 40%;
+  margin-bottom: 10px;
+  margin-top: -8%;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: Museo-300;
+  color: white;
+  margin-top: 15px;
+  margin-left: 2px;
+  width: 320px;
+}
+
+.footer-links h4 {
+  color: #fff;
+  margin-bottom: 32px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 4px 0px 6px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+  padding: 2px 4px 0px 6px;
+}
+
+.footer-links ul li a {
+  color: #aaa;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: Museo-300;
+}
+
+.footer-links ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  text-align: center;
+  width: 100%;
+  padding-top: 18px;
+  margin-top: 7%;
+  font-size: 15px;
+  height: 48px;
+  background: #1e1e1e;
+  font-family: Museo-300;
+  opacity: 0.6;
+}
+
+.footer-bottom span {
+  color: #c4fd19;
+  cursor: pointer;
+}
