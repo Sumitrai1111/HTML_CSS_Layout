@@ -148,7 +148,7 @@ nav ul li a:hover {
 }
 
 .hero img {
-  max-height: 380px;
+  max-height: 390px;
   flex: 1;
   object-fit: contain;
 }
@@ -365,7 +365,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: space-around;
   margin-top: 18%;
-  padding-left: 10%;
+  padding-left: 6%;
 }
 
 .newsletter-content {
@@ -391,7 +391,7 @@ nav ul li a:hover {
 .newsletter-form {
   display: flex;
   align-items: center;
-  width: 580px;
+  width: 500px;
   height: 45px;
 }
 
@@ -415,7 +415,7 @@ nav ul li a:hover {
 
 /* submit button */
 .newsletter-form button {
-  width: 200px; /* should match btn5.png’s width */
+  width: 170px; /* should match btn5.png’s width */
   height: 100%;
   background: url("img/btn5.png") no-repeat center/100% 100%;
   color: #ffcc00;
@@ -440,15 +440,15 @@ nav ul li a:hover {
   background: #000;
   color: #aaa;
   padding: 60px 20px 15px;
-  margin-left: 30px;
+  margin-left: 32px;
   margin-top: 10px;
 }
 
 .footer-container {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-  gap: 30px;
-  max-width: 1200px;
+  gap: 38px;
+  width: 1130px;
   margin: auto;
 }
 
@@ -474,7 +474,7 @@ nav ul li a:hover {
   margin-bottom: 32px;
   font-size: 16px;
   cursor: pointer;
-  padding: 2px 4px 0px 6px;
+  padding: 2px 4px 0px 8px;
 }
 
 .footer-links ul {
@@ -485,7 +485,7 @@ nav ul li a:hover {
 
 .footer-links ul li {
   margin-bottom: 8px;
-  padding: 2px 4px 0px 6px;
+  padding: 2px 4px 0px 8px;
 }
 
 .footer-links ul li a {
